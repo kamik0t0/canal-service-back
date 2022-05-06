@@ -7,7 +7,7 @@ const dataController = require("./controllers/get-data-controller.js");
 
 const app = express();
 app.use(setHeaders);
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 app.get("/", dataController);
 // app.use("/", indexRouter);
 
