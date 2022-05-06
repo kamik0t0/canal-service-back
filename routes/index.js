@@ -1,9 +1,8 @@
 const Router = require("express");
 const router = new Router();
+const dataController = require("../controllers/get-data-controller.js");
 
 /* GET home page. */
-router.get("/", function (req, res, next) {
-    res.render("index", { title: "Express" });
-});
+router.get("/", dataController);
 
 module.exports = router;
