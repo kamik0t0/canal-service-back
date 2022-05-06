@@ -4,11 +4,11 @@ const mysql = require("mysql2");
 function DBCONNECT() {
     return mysql
         .createPool({
-            host: "localhost",
+            host: "bzsnhusa3cc94sdeolgg-mysql.services.clever-cloud.com",
             port: 3306,
-            user: "root",
-            database: "test_task_canalservice",
-            password: "im0bilaiZER",
+            user: "uhr4iunb1zlw3cpt",
+            database: "bzsnhusa3cc94sdeolgg",
+            password: "sIg0E4MMIJILW6EamBI1",
         })
         .promise();
 }
