@@ -1,7 +1,7 @@
-const Router = require("express");
-const router = new Router();
-const dataController = require("../controllers/get-data-controller.js");
+// const Router = require("express"),
+//     router = new Router(),
+//     dataController = require("../controllers/get-data-controller.js");
 
-router.get("/", dataController);
+// router.get("/", dataController);
 
-module.exports = router;
+// module.exports = router;

@@ -15,7 +15,7 @@ function DBCONNECT() {
 
 module.exports = DBCONNECT();
 
-/*
+/* Не вижу смысла скрывать ключи поскольку данные не носят конфиденциального характера, поэтому для удобства
 // Облачная
 function DBCONNECT() {
     return mysql
