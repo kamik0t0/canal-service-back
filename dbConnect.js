@@ -1,21 +1,22 @@
 // Подключение к базе данных
 const mysql = require("mysql2");
 
+// Локальная
 function DBCONNECT() {
     return mysql
         .createPool({
-            host: "bzsnhusa3cc94sdeolgg-mysql.services.clever-cloud.com",
+            host: "localhost",
             port: 3306,
-            user: "uhr4iunb1zlw3cpt",
-            database: "bzsnhusa3cc94sdeolgg",
-            password: "sIg0E4MMIJILW6EamBI1",
+            user: "root",
+            database: "test_task_canalservice",
+            password: "im0bilaiZER",
         })
         .promise();
 }
 
 module.exports = DBCONNECT();
 
-/* Не вижу смысла скрывать ключи поскольку данные не носят конфиденциального характера, поэтому для удобства
+/* Не вижу смысла скрывать ключи поскольку данные не носят конфиденциального характера, поэтому для удобства тестирования все лежит здесь
 // Облачная
 function DBCONNECT() {
     return mysql

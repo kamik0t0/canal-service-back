@@ -1,5 +1,6 @@
 const getDataModel = require("../models/get-data-model.js");
 
+// тонкий контроллер для получения и отдачи запроса
 module.exports = async function (req, res) {
     try {
         const result = await getDataModel();

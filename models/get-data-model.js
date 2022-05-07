@@ -1,9 +1,6 @@
 const DBCONNECT = require("../dbConnect.js");
 
+// простейший запрос к БД на выборку всех данных из таблицы
 module.exports = async () => {
-    try {
-        return DBCONNECT.query(`SELECT * FROM countries`);
-    } catch (error) {
-        console.log(error);
-    }
+    return DBCONNECT.query(`SELECT * FROM countries`);
 };
